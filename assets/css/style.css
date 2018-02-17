@@ -1,0 +1,44 @@
+body {
+  width: 960px;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  background-image: url("../images/handmadepaper.png");
+  background-color: #a0a0a0;
+}
+
+.nav_container {
+  
+  height:140px;
+  margin: 0 auto;
+}
+
+
+#nav_bar {
+  margin: 10px;
+}
+
+#nav_bar ul {
+  list-style: none;
+  margin: 4px 0;
+  padding: 2px 0;
+  float: right;
+}
+
+#nav_bar li {
+  display: inline;
+  border-right: 1px solid lightgray;
+}
+
+#nav_bar a {
+  color: black;
+  padding: 8px 16px;
+}
+
+h1 #name {
+  float: left;
+}
+
