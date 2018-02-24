@@ -12,11 +12,17 @@ body {
   color: #000000;
   background-image: url("../images/handmadepaper.png");
   /* background-color: #a31515; */
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 25px;
 }
 
 header {
@@ -27,6 +33,7 @@ header {
   border-bottom-color: slategray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  z-index: 10;
 }
 
 #name {
@@ -42,13 +49,7 @@ header {
 
 #nav {
   background-color: white;
-
-  
-}
-
-#nav_bar {
   height: 60px;
- 
 }
 
 #nav_bar ul {
@@ -57,16 +58,18 @@ header {
   padding: 10px 0;
 }
 
-#nav_bar li {
-  /* display: inline; */
+.link {
   float: right;
   border-right: 1px solid lightgray;
+}
+
+.lastLink {
+  border-right: 0px;
 }
 
 #nav_bar a {
   color: black;
   padding: 8px 16px;
- 
 }
 
 #nav_bar a:link {
@@ -84,40 +87,90 @@ header {
   color: #4aaaa5;
   width: 650px;
   height: auto;
+  /* padding: 10px; */
   margin: 60px 40px 0px 75px;
-  display: block;
+  overflow-y: auto;
+  /* display: block; */
+ 
 }
 
-.infobox {
-  padding: 10px;
-}
-
+/* .infobox_text {
+  position: absolute;
+  overflow-y: auto;
+  background-color: white;
+} */
 .infobox h1 {
-  padding: 10px 10px 30px 20px;
-  margin-bottom: 0px;
+  padding: 20px 10px 30px 20px;
+  /* margin-bottom: 0px; */
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 4px;
+  margin: 0 20px 0 20px;
   border-image: url("../images/handmadepaper.png") 30% round;
 }
 
+.aside {
+  position: fixed;
+  top: 90px;
+  left: 765px;
+  width: 270px;
+  height: 175px;
+  /* overflow-y: auto; */
+  background-color: white;
+  /* margin-bottom: 0px; */
+}
+
+aside h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-image: url("../images/handmadepaper.png") 30% round;
+  color: #4aaaa5;
+  font-size: 20px;
+}
+
+.aside a {
+  text-decoration: none;
+}
 .footer {
   text-align: center;
   height: 40px;
   width: 960px;
   background-color: #666666;
+  color: white;
   margin-left: 75px;
-  padding-top: 5px;
+  padding-top: 15px;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
+  border-top-color: #4aaaa5;
+  border-top-style: solid;
+  border-top-width: 5px;
 }
 
 img {
   width: 200px;
-  height: 175 px;
+  height: 175px;
 }
 
 #about_img {
   float: left;
   padding: 0 20px 20px 0;
   margin: 20px 0 20px 20px;
+}
+
+.connect_container {
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.connect_container img {
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  margin: 10px
+}
+
+.bold {
+ font-weight:bold;
 }
