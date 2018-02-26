@@ -151,21 +151,6 @@ aside h1 {
   margin: 10px
 }
 
-.footer {
-  text-align: center;
-  height: 40px;
-  width: 960px;
-  background-color: #666666;
-  color: white;
-  margin: 0 0 0 75px;
-  padding: 10px 0 0 0;
-  position: fixed;
-  bottom: 0px;
-  border-top-color: #4aaaa5;
-  border-top-style: solid;
-  border-top-width: 5px;
-}
-
 img {
   width: 200px;
   height: 175px;
@@ -218,4 +203,19 @@ input[type="submit"] {
 
 .float_right {
   float: right;
+}
+
+.footer {
+  text-align: center;
+  height: 50px;
+  width: 960px;
+  background-color: #666666;
+  color: white;
+  margin: 0 0 0 75px;
+  padding: 10px 0 0 0;
+  position: fixed;
+  bottom: 0px;
+  border-top-color: #4aaaa5;
+  border-top-style: solid;
+  border-top-width: 5px;
 }
